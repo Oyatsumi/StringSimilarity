@@ -1,0 +1,82 @@
+@RELATION words
+
+%Length
+
+@attribute word1Length real
+@attribute word2Length real
+@attribute word2-word1Length real
+@attribute word2-word1LengthAbs real
+
+%Proposed Attributes
+
+@attribute comProbabilityChar0Dist0 real
+@attribute comProbabilityChar0Dist0DivWord2Length real
+@attribute comProbabilityCharMDist0 real
+@attribute comProbabilityChar0DistM real
+@attribute comProbabilityCharMDistM real
+@attribute comWeightedTotalProbabilityDist0 real
+@attribute comWeightedTotalProbabilityDist1 real
+@attribute comWeightedTotalProbabilityDistM real
+@attribute comWeightedTotalProbability real
+
+@attribute comNormWeightedTotalProbability real
+
+@attribute comWeightedTotalProbability(WTPS)DivWord1Length real
+@attribute comWeightedTotalProbability(WTPS)DivWord2Length real
+@attribute comWeightedTotalProbability(WTPS)Div real
+@attribute comMagicalColumnDiv(COD) real
+@attribute comMagicalColumnDiv2(COD) real
+
+@attribute rlmMclcs real
+@attribute rlmNormMclcs real
+@attribute rlmTotalLength(SO_ou_RLMSO) real
+
+@attribute rlmNormTotalLength(SO_ou_RLMSO_div) real
+
+@attribute rlmTotalLength(SO_ou_RLMSO)DivWord2Length real
+@attribute rlmTotalLength(WSO_ou_RLMWSO)Weighted real
+@attribute rlmTotalLengthWeightedInv real
+@attribute rlmMaxLengthOccurrences(MO) real
+@attribute rlmMaxLength(MORL) real
+@attribute rlmMinLengthMaxOccurrences(MLMO) real
+@attribute rlmMaxOccurrencesMinLength(MOML) real
+
+
+
+%Mutual Information
+
+@attribute mi0 real
+@attribute mi1 real
+@attribute mi2 real
+@attribute mi3 real
+@attribute mi4 real
+@attribute meanMI real
+%proposed mi's
+@attribute weightedMeanMI real
+@attribute wmi0 real
+@attribute wmi1 real
+@attribute wmi2 real
+@attribute wmi3 real
+@attribute wmi4 real
+@attribute meanWMI real
+@attribute weightedMeanWMI real
+
+%LCS
+
+@attribute nlcs real
+@attribute mclcs00 real
+@attribute mclcs01 real
+@attribute mclcsLength/2Length/2 real
+@attribute nmclcs real
+
+%distances
+
+@attribute damerau real
+%@attribute jaroWinkler real
+@attribute levenshtein real
+@attribute dice real
+@attribute hamming real
+
+@attribute classe {true, false}
+
+@DATA

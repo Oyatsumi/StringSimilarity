@@ -1,0 +1,137 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.ClassifierAttributeEval -execution-slots 1 -B weka.classifiers.trees.LMT -F 5 -T 0.01 -R 1 -E ACC -- -I -1 -M 2 -W 0.0
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     words-weka.filters.unsupervised.attribute.Remove-R51
+Instances:    100000
+Attributes:   54
+              word1Length
+              word2Length
+              word2-word1Length
+              word2-word1LengthAbs
+              comProbabilityChar0Dist0
+              comProbabilityChar0Dist0DivWord2Length
+              comProbabilityCharMDist0
+              comProbabilityChar0DistM
+              comProbabilityCharMDistM
+              comWeightedTotalProbabilityDist0
+              comWeightedTotalProbabilityDist1
+              comWeightedTotalProbabilityDistM
+              comWeightedTotalProbability
+              comNormWeightedTotalProbability
+              comWeightedTotalProbability(WTPS)DivWord1Length
+              comWeightedTotalProbability(WTPS)DivWord2Length
+              comWeightedTotalProbability(WTPS)Div
+              comMagicalColumnDiv(COD)
+              comMagicalColumnDiv2(COD)
+              rlmMclcs
+              rlmNormMclcs
+              rlmTotalLength(SO_ou_RLMSO)
+              rlmNormTotalLength(SO_ou_RLMSO_div)
+              rlmTotalLength(SO_ou_RLMSO)DivWord2Length
+              rlmTotalLength(WSO_ou_RLMWSO)Weighted
+              rlmTotalLengthWeightedInv
+              rlmMaxLengthOccurrences(MO)
+              rlmMaxLength(MORL)
+              rlmMinLengthMaxOccurrences(MLMO)
+              rlmMaxOccurrencesMinLength(MOML)
+              mi0
+              mi1
+              mi2
+              mi3
+              mi4
+              meanMI
+              weightedMeanMI
+              wmi0
+              wmi1
+              wmi2
+              wmi3
+              wmi4
+              meanWMI
+              weightedMeanWMI
+              nlcs
+              mclcs00
+              mclcs01
+              mclcsLength/2Length/2
+              nmclcs
+              damerau
+              levenshtein
+              dice
+              hamming
+              classe
+Evaluation mode:    evaluate on all training data
+
+
+
+=== Attribute Selection on all input data ===
+
+Search Method:
+	Attribute ranking.
+
+Attribute Evaluator (supervised, Class (nominal): 54 classe):
+	Classifier feature evaluator 
+
+	Using 	Wrapper Subset Evaluator
+	Learning scheme: weka.classifiers.trees.LMT
+	Scheme options: -I -1 -M 2 -W 0.0 
+	Subset evaluation: classification accuracy
+	Number of folds for accuracy estimation: 5
+
+
+Ranked attributes:
+ 0.1533     28 rlmMaxLength(MORL)
+ 0.15281    20 rlmMclcs
+ 0.14807    49 nmclcs
+ 0.131995   52 dice
+ 0.1247     21 rlmNormMclcs
+ 0.12356    23 rlmNormTotalLength(SO_ou_RLMSO_div)
+ 0.11921    16 comWeightedTotalProbability(WTPS)DivWord2Length
+ 0.114945   24 rlmTotalLength(SO_ou_RLMSO)DivWord2Length
+ 0.109885   10 comWeightedTotalProbabilityDist0
+ 0.10925    11 comWeightedTotalProbabilityDist1
+ 0.10467    12 comWeightedTotalProbabilityDistM
+ 0.09883    45 nlcs
+ 0.09671    14 comNormWeightedTotalProbability
+ 0.08414    15 comWeightedTotalProbability(WTPS)DivWord1Length
+ 0.080325   13 comWeightedTotalProbability
+ 0.079995   17 comWeightedTotalProbability(WTPS)Div
+ 0.07764    25 rlmTotalLength(WSO_ou_RLMWSO)Weighted
+ 0.06389    22 rlmTotalLength(SO_ou_RLMSO)
+ 0.0542     26 rlmTotalLengthWeightedInv
+ 0.043265   30 rlmMaxOccurrencesMinLength(MOML)
+ 0.043265   27 rlmMaxLengthOccurrences(MO)
+ 0.0374     46 mclcs00
+ 0.03327    19 comMagicalColumnDiv2(COD)
+ 0.03148    48 mclcsLength/2Length/2
+ 0.02808    47 mclcs01
+ 0.02529    18 comMagicalColumnDiv(COD)
+ 0.02123    53 hamming
+ 0.020565    6 comProbabilityChar0Dist0DivWord2Length
+ 0.02056     5 comProbabilityChar0Dist0
+ 0.01628     7 comProbabilityCharMDist0
+ 0.01501    50 damerau
+ 0.014915   51 levenshtein
+ 0.0135     29 rlmMinLengthMaxOccurrences(MLMO)
+ 0.01033    38 wmi0
+ 0.008105   39 wmi1
+ 0.00724    41 wmi3
+ 0.00667    40 wmi2
+ 0.00581    42 wmi4
+ 0.00405     8 comProbabilityChar0DistM
+ 0.00405     9 comProbabilityCharMDistM
+ 0.00349    35 mi4
+ 0.003295   31 mi0
+ 0.003245   33 mi2
+ 0.00317    34 mi3
+ 0.00287    36 meanMI
+ 0.002325   32 mi1
+ 0.000495   43 meanWMI
+-0.00044    37 weightedMeanMI
+-0.000545    3 word2-word1Length
+-0.000745    4 word2-word1LengthAbs
+-0.00086     1 word1Length
+-0.00108    44 weightedMeanWMI
+-0.001125    2 word2Length
+
+Selected attributes: 28,20,49,52,21,23,16,24,10,11,12,45,14,15,13,17,25,22,26,30,27,46,19,48,47,18,53,6,5,7,50,51,29,38,39,41,40,42,8,9,35,31,33,34,36,32,43,37,3,4,1,44,2 : 53
+

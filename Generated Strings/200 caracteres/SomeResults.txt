@@ -1,0 +1,35 @@
+Tester:     weka.experiment.PairedCorrectedTTester -G 4,5,6 -D 1 -R 2 -S 0.01 -result-matrix "weka.experiment.ResultMatrixPlainText -mean-prec 2 -stddev-prec 2 -col-name-width 0 -row-name-width 25 -mean-width 2 -stddev-width 2 -sig-width 1 -count-width 5 -print-col-names -print-row-names -enum-col-names"
+Analysing:  Percent_correct
+Datasets:   4
+Resultsets: 9
+Confidence: 0.01 (two tailed)
+Sorted by:  -
+Date:       11/08/16 19:36
+
+ordem bases:
+all_R=0
+dist_R=0
+all_R=0.15
+dist_R=0.15
+
+Dataset                   (1) rules.Ze | (2) trees (3) trees (4) trees (5) funct (6) lazy. (7) funct (8) trees (9)
+------------------------------------------------------------------------------------------------------------------
+words                    (100)   50.00 |   99.73 v   99.83 v   99.01 v   93.15 v   99.37 v   99.52 v   99.86 v    
+words-weka.filters.unsupe(100)   50.00 |   99.17 v   99.43 v   97.98 v   90.62 v   98.83 v   99.11 v   99.62 v    
+words-weka.filters.unsupe(100)   50.16 |   69.28 v   68.70 v   67.96 v   65.63 v   65.72 v   67.02 v   69.52 v    
+words-weka.filters.unsupe(100)   50.16 |   65.81 v   65.73 v   63.65 v   60.34 v   64.47 v   65.70 v   67.10 v    
+------------------------------------------------------------------------------------------------------------------
+                               (v/ /*) |   (4/0/0)   (4/0/0)   (4/0/0)   (4/0/0)   (4/0/0)   (4/0/0)   (4/0 (0/0/0
+
+
+Key:
+(1) rules.ZeroR '' 48055541465867954
+(2) trees.REPTree '-M 15 -V 1.0E-10 -N 5 -S 1 -L -1 -I 0.0' -9216785998198681299
+(3) trees.RandomForest '-I 31 -K 0 -S 1 -num-slots 1' 1116839470751428698
+(4) trees.HoeffdingTree '-L 2 -S 1 -E 1.0E-10 -H 0.05 -M 0.01 -G 100.0 -N 0.0' 7117521775722396251
+(5) functions.RBFNetwork '-B 8 -S 1 -R 1.0E-10 -M -1 -W 0.1' -3669814959712675720
+(6) lazy.IBk '-K 1 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -3080186098777067172
+(7) functions.MultilayerPerceptron '-L 0.7 -M 0.2 -N 250 -V 0 -S 0 -E 20 -H a' -5990607817048210779
+(8) trees.LMT '-I -1 -M 15 -W 0.0' -1113212459618104943
+(9) rules.DecisionTable '-X 9 -S \"BestFirst -D 1 -N 5\"' 2888557078165701326
+

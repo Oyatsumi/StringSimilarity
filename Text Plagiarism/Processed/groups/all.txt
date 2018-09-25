@@ -1,0 +1,47 @@
+Tester:     weka.experiment.PairedCorrectedTTester -G 4,5,6 -D 1 -R 2 -S 0.05 -result-matrix "weka.experiment.ResultMatrixPlainText -mean-prec 2 -stddev-prec 2 -col-name-width 0 -row-name-width 25 -mean-width 2 -stddev-width 2 -sig-width 1 -count-width 5 -print-col-names -print-row-names -enum-col-names"
+Analysing:  Percent_correct
+Datasets:   9
+Resultsets: 10
+Confidence: 0.05 (two tailed)
+Sorted by:  -
+Date:       03/08/16 21:53
+
+
+C:\Users\erick\Documents\Outros Projetos\ComparaçãoNomes\Bases e Resultados\Text Plagiarism\Processado\groups\com.arff
+C:\Users\erick\Documents\Outros Projetos\ComparaçãoNomes\Bases e Resultados\Text Plagiarism\Processado\groups\distances.arff
+C:\Users\erick\Documents\Outros Projetos\ComparaçãoNomes\Bases e Resultados\Text Plagiarism\Processado\groups\nls.arff
+C:\Users\erick\Documents\Outros Projetos\ComparaçãoNomes\Bases e Resultados\Text Plagiarism\Processado\groups\nmclcs.arff
+C:\Users\erick\Documents\Outros Projetos\ComparaçãoNomes\Bases e Resultados\Text Plagiarism\Processado\groups\rlm.arff
+C:\Users\erick\Documents\Outros Projetos\ComparaçãoNomes\Bases e Resultados\Text Plagiarism\Processado\extractedFeatures_multiclass.arff
+C:\Users\erick\Documents\Outros Projetos\ComparaçãoNomes\Bases e Resultados\Text Plagiarism\Processado\groups\pmi.arff
+C:\Users\erick\Documents\Outros Projetos\ComparaçãoNomes\Bases e Resultados\Text Plagiarism\Processado\groups\wmi.arff
+C:\Users\erick\Documents\Outros Projetos\ComparaçãoNomes\Bases e Resultados\Text Plagiarism\Processado\groups\length.arff
+
+
+Dataset                   (1) rules.Ze | (2) bayes (3) trees (4) trees (5) funct (6) rules (7) lazy. (8) funct (9) trees (10) tree
+----------------------------------------------------------------------------------------------------------------------------------
+words-weka.filters.unsupe(100)   40.00 |   41.03     39.37     43.87     35.61     40.84     40.84     37.92     42.06     43.03  
+words-weka.filters.unsupe(100)   40.00 |   55.83 v   50.13 v   50.40 v   48.30     53.07 v   46.52     55.49 v   58.01 v   54.58 v
+'words-weka.filters.unsup(100)   40.00 |   51.17 v   51.17 v   46.74     46.39     51.79 v   48.31 v   51.81 v   49.29 v   52.18 v
+'words-weka.filters.unsup(100)   40.00 |   52.53 v   48.40 v   50.19     47.00     52.96 v   44.80     44.42     52.99 v   51.63 v
+'words-weka.filters.unsup(100)   40.00 |   60.23 v   57.51 v   54.68 v   53.04 v   60.39 v   46.26     53.57 v   57.90 v   59.10 v
+words                    (100)   40.00 |   61.36 v   52.97 v   56.79 v   46.97     62.52 v   49.00 v   49.86     50.83 v   57.70 v
+'words-weka.filters.unsup(100)   40.00 |   40.00     39.78     26.97 *   32.51     40.00     31.56 *   30.97 *   37.42     36.94  
+'words-weka.filters.unsup(100)   40.00 |   40.00     39.26     32.20     36.92     40.00     32.49     36.10     38.70     37.89  
+words-weka.filters.unsupe(100)   40.00 |   40.00     39.90     22.08 *   35.11     40.00     30.11 *   36.70     39.07     38.13  
+----------------------------------------------------------------------------------------------------------------------------------
+                               (v/ /*) |   (5/4/0)   (5/4/0)   (3/4/2)   (1/8/0)   (5/4/0)   (2/5/2)   (3/5/1)   (5/4/0)   (5/4/0)
+
+
+Key:
+(1) rules.ZeroR '' 48055541465867954
+(2) bayes.NaiveBayes -D 5995231201785697655
+(3) trees.HoeffdingTree '-L 2 -S 1 -E 1.0E-7 -H 0.05 -M 0.01 -G 200.0 -N 0.0' 7117521775722396251
+(4) trees.RandomForest '-I 100 -K 0 -S 1 -num-slots 1' 1116839470751428698
+(5) functions.RBFNetwork '-B 2 -S 1 -R 1.0E-8 -M -1 -W 0.1' -3669814959712675720
+(6) rules.DecisionTable '-X 3 -S \"BestFirst -D 1 -N 5\"' 2888557078165701326
+(7) lazy.IBk '-K 3 -W 0 -A \"weka.core.neighboursearch.LinearNNSearch -A \\\"weka.core.EuclideanDistance -R first-last\\\"\"' -3080186098777067172
+(8) functions.MultilayerPerceptron '-L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a' -5990607817048210779
+(9) trees.LMT '-R -I -1 -M 5 -W 0.0' -1113212459618104943
+(10) trees.REPTree '-M 1 -V 0.001 -N 3 -S 1 -L -1 -I 0.0' -9216785998198681299
+
